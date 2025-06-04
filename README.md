@@ -1,15 +1,29 @@
-### Informatii utilizare checker:
+# IMDb Java – Aplicație de tip bază de date pentru filme
 
-> Rezolvati tema (crearea claselor) in directorul "src/main/java/org.example"
-din scheletul de checker pus la dispozitie.
+Acest proiect reprezintă o aplicație Java care simulează o parte din funcționalitatea site-ului IMDb, incluzând gestiunea de utilizatori, filme, actori și evaluări. Aplicația procesează fișiere JSON de intrare și generează un răspuns bazat pe cererile primite.
 
-> In schelet exista un config file - "test/resources/checker_config.json".
-Inlocuiti exemplele cu numele complete ale claselor (create de voi) care
-implementeaza pattern-urile.
+## Structură generală
 
-> Pentru a obtine numele complet al unei clase, puteti folosi functia
-<NUME_CLASA.class.getCanonicalName();>.
+Aplicația este organizată în pachete Java și fișiere de configurare Gradle, urmând principiile programării orientate pe obiect. Sunt incluse și teste automate care verifică corectitudinea implementării.
 
-> Pentru rularea checker-ului se va folosi comanda <./gradlew test>.
-Daca folositi IntelliJ, se poate rula direct prin click dreapta pe folderul
-test si selectarea optiunii Run Tests in TemaPOO2023.
+## Funcționalități principale
+
+- Citirea datelor din fișiere JSON:
+  - `accounts.json`
+  - `actors.json`
+  - `production.json`
+  - `requests.json`
+
+- Tratarea cererilor de tip:
+  - login, logout
+  - add/remove movie/actor
+  - create/delete user
+  - rating & updates pentru filme
+  - căutare și filtrare filme
+
+- Scrierea rezultatelor într-un fișier de ieșire JSON
+
+- Testare automată cu fișiere de intrare presetate
+
+## Organizare fișiere
+
